@@ -1,0 +1,58 @@
+/*change the font family used for various elements
+- consider using a different font color for headings and 
+  body text
+- change the alignment of various elements (such as
+  centering the title)
+- add borders, padding, and margin to improve separation   of various parts of the resume*/
+* {
+    margin: auto;
+    font: 11px Calibri, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mainDetails {
+    border-top: 10px solid black;
+    border-bottom: double; 
+}
+
+#contactDetails ul {
+    list-style-type: none;
+}
+
+.sectionTitle h1, .sectionContent h2 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+article h2 {
+    text-align: left;
+}
+
+.subDetails {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+ul.keySkills li {
+    text-align: left;
+
+}
+
+p {
+    text-align: left;
+}
+
+#name h1 {
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.sectionContent article p.subDetails {
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
+    
+}
