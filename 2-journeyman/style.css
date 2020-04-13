@@ -1,3 +1,26 @@
+/*style a Resume: Journeyman
+
+For this activity, you'll need to update the rules in `src/style.css` in order to get a resume that looks like the one in `mock_up.pdf`.
+
+Unlike the apprentice level, we'd like you to match a certain result. We've handled alignment for you, so all that remains is to update colors, fonts, borders, etc to match the mock up.
+
+## Fonts
+The body and html tag use `'Lato'`, `'Helvetica'`, `'Arial'`, and `sans-serif` by default.
+
+Other elements use `'Rokkitt'`, `'Helvetica'`, `'Arial'`, and `sans-serif`.
+
+## Colors
+The following colors are used throughout the document for text and backgrounds:
+- `#444444` (slate grey)
+- `#181818` (jet black)
+- `#cf8a05` (yellow)
+- `#f3f3f3` (off white)
+- `#dedede` (light grey)
+
+## Borders
+- the border that separates the header from the rest of the resume is 2px thick
+- borders between each section are 1px thick*/
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	border: 0;
 	font: inherit;
@@ -16,9 +39,12 @@ html, body {
 }
 
 p {
+	color: #444444;
+	font-family: lato;
 	font-size: 1em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
+
 }
 
 #cv {
@@ -32,17 +58,21 @@ p {
 }
 
 #name h1 {
+	font-family: rokkitt;
 	font-size: 2.5em;
 	font-weight: 700;
 	margin-bottom: -6px;
 }
 
 #name h2 {
+	color: #181818;
+	font-family: rokkitt; 
 	font-size: 2em;
 	margin-left: 2px;
 }
 
 #mainArea {
+	border-top: 2px solid #cf8a05; 
 	padding: 0 40px;
 }
 
@@ -63,6 +93,8 @@ p {
 }
 
 #contactDetails {
+	font-family: lato;
+	color: #444444;
 	float: right;
 }
 
@@ -85,6 +117,7 @@ p {
 
 section {
 	padding: 20px 0 0;
+	border-bottom: 1px solid #f3f3f3;
 }
 
 section:first-child {
@@ -93,6 +126,8 @@ section:first-child {
 
 section:last-child {
 	padding: 20px 0 10px;
+	border: none;
+
 }
 
 .sectionTitle {
@@ -101,16 +136,20 @@ section:last-child {
 }
 
 .sectionContent {
+	font-family: rokkitt; 
 	float: right;
 	width: 72.5%;
 }
 
 .sectionTitle h1 {
+	color: #cf8a05; 
+	font-family: rokkitt;
 	font-style: italic;
 	font-size: 1.5em;
 }
 
 .sectionContent h2 {
+	font-family: rokkitt;
 	font-size: 1.5em;
 	margin-bottom: -2px;
 }
@@ -122,6 +161,7 @@ section:last-child {
 }
 
 .keySkills {
+	font-family: lato;
 	list-style-type: none;
 	column-count: 3;
 	margin-bottom: 20px;
